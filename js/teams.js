@@ -14,5 +14,5 @@ function getTeam(){
 		}
 	];
 
-	return teams;
+	return teams;//
 }

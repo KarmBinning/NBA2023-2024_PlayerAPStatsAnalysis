@@ -15,8 +15,6 @@ function replaceLogoWithTeamChars(){
 	});	
 }
 
-
-
 function addNumCharsToTime(){
 	$('.playByPlay__time').each(function(i) {
 		time = $(this).text();
