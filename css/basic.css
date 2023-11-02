@@ -1,0 +1,14 @@
+body
+{
+	background-color: black;
+}
+
+table
+{
+	color: gold;
+}
+
+.tabs__nav
+{
+	display: none;
+}
