@@ -34,10 +34,32 @@ function removeTableExtraTableHeaders(){
 	});
 }
 
+function renameHeaderToAway(){
+	var count = 1;
+	$('th').each(function(i){
+		if (count == 3)
+			$(this).text('AWAY');
+		
+		count++;
+	});
+}
+function renameHeaderToHome(){
+	var count = 1;
+	$('th').each(function(i){
+		if (count == 4)
+			$(this).text('HOME');
+		
+		count++;
+	});
+}
+
 $(document).ready(function(){
 	
 	replaceLogoWithTeamChars();
 	addNumCharsToTime();
 	removeTableExtraTableHeaders();
+
+	renameHeaderToHome();
+	renameHeaderToAway();
 	
 });
