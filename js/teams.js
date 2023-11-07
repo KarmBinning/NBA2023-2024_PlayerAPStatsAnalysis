@@ -105,8 +105,8 @@ function getTeam(){
 			name: "SAC"
 		},
         {
-			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/sas.png&scale=crop&cquality=40&location=origin&w=40&h=40",
-			name: "SAS"
+			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/sa.png&scale=crop&cquality=40&location=origin&w=40&h=40",
+			name: "SA"
 		},
         {
 			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/tor.png&scale=crop&cquality=40&location=origin&w=40&h=40",
