@@ -1,8 +1,3 @@
-//C:\test\nba\js
-// NBA2023-2024_PlayerAPStatsAnalysis: 
-
-var homeTeam = 'TOR', awayTeam = 'MIN';
-
 function replaceLogoWithTeamChars(){
 	var teams = getTeam();
 
