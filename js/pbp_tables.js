@@ -24,11 +24,9 @@ function addNumCharsToTime(){
 function removeTableExtraTableHeaders(){
 	
 	var count = 1;
-	$('th').each( function(i){
-		
-		if (count > 4){
-			$(this).html(' ');
-			
+	$('.Table__THEAD').each( function(i){
+		if (count > 1){
+			$(this).remove();
 		}
 		count = count + 1;
 	});
@@ -53,13 +51,20 @@ function renameHeaderToHome(){
 	});
 }
 
+function addHeaderColumns(){
+	var html_th = '<tr class="Table__TR Table__even"><th title="" class="Table__TH">TIME</th>'
+		+ '<th title="" class="tl Table__TH">TEAM</th><th title="" class="tl Table__TH">PLAY</th><th title="" class="Table__TH">AWAY</th><th title="" class="Table__TH">HOME</th></tr>';
+		
+	$('.Table__THEAD').html(html_th);
+}
+
 $(document).ready(function(){
 	
 	replaceLogoWithTeamChars();
 	addNumCharsToTime();
-	removeTableExtraTableHeaders();
 
-	renameHeaderToHome();
-	renameHeaderToAway();
-	
+	removeTableExtraTableHeaders();
+	//renameHeaderToHome();
+	//renameHeaderToAway();
+	addHeaderColumns();
 });
