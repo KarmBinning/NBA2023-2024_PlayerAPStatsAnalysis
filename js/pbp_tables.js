@@ -32,25 +32,6 @@ function removeTableExtraTableHeaders(){
 	});
 }
 
-function renameHeaderToAway(){
-	var count = 1;
-	$('th').each(function(i){
-		if (count == 3)
-			$(this).text('AWAY');
-		
-		count++;
-	});
-}
-function renameHeaderToHome(){
-	var count = 1;
-	$('th').each(function(i){
-		if (count == 4)
-			$(this).text('HOME');
-		
-		count++;
-	});
-}
-
 function addHeaderColumns(){
 	var html_th = '<tr class="Table__TR Table__even"><th title="" class="Table__TH">TIME</th>'
 		+ '<th title="" class="tl Table__TH">TEAM</th><th title="" class="tl Table__TH">PLAY</th><th title="" class="Table__TH">AWAY</th><th title="" class="Table__TH">HOME</th></tr>';
@@ -64,7 +45,5 @@ $(document).ready(function(){
 	addNumCharsToTime();
 
 	removeTableExtraTableHeaders();
-	//renameHeaderToHome();
-	//renameHeaderToAway();
 	addHeaderColumns();
 });
