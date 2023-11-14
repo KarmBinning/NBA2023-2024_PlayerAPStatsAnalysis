@@ -100,3 +100,21 @@ function getCategoryActions(){
 
 	return categoryActions;
 }
+
+function getEachTeamsPlay(team){
+	$('.playByPlay__logo').each(function(i){
+		if ($(this).text() == team)
+		{
+			$(this).parent().find('.playByPlay__text').each(function(j){
+				var pbp = $(this).text();
+				log(pbp);
+			});
+		}
+	});
+}
+
+$(document).ready(function(){
+	
+	getEachTeamsPlay('TOR');
+	
+});
