@@ -102,19 +102,48 @@ function getCategoryActions(){
 }
 
 function getEachTeamsPlay(team){
+	var pbp = [];
 	$('.playByPlay__logo').each(function(i){
 		if ($(this).text() == team)
 		{
 			$(this).parent().find('.playByPlay__text').each(function(j){
-				var pbp = $(this).text();
-				log(pbp);
+				pbp.push($(this).text());
 			});
 		}
 	});
+	
+	replaceFullNameWithPlaceholder(pbp);
+}
+
+function replaceFullNameWithPlaceholder(pbp){
+	var players = getPlayersFullName();
+	
+	for (var i=0; i<pbp.length; i++)
+	{
+		for (var p=0; p<players.length; p++)
+		{
+			if ( pbp[i].includes(players[p]) )
+			{
+				var playerUpperCaseFullName = players[p].toUpperCase();
+				pbp[i] = pbp[i].replace(players[p], playerUpperCaseFullName);
+				log(pbp[i]);
+			}
+		}
+		
+	}
+	log(pbp);
+}
+function getPlayersFullName(){
+	var playersFullName = [];
+	var players = getPlayersList();
+	$(players).each(function(p){
+		playersFullName.push(this[0]);
+	});
+	
+	return playersFullName;
 }
 
 $(document).ready(function(){
 	
 	getEachTeamsPlay('TOR');
-	
 });
