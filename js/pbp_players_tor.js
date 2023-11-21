@@ -1,11 +1,11 @@
 function getPlayersList(){
 	var playersList = 
 	[
-		['Dennis Schröder',         'Point Guard'],
+		['Dennis Schroder',         'Point Guard'],
 		['Pascal Siakam',           'Power Forward'],
 		['Gradey Dick',             'Small Forward'],
 		['Scottie Barnes',          'Power Forward'],
-		['OG Anunoby',              'Small Forward'],
+		['O.G. Anunoby',            'Small Forward'],
 		['Jakob Poeltl',            'Center'],
 		['Gary Trent Jr.',          'Shooting Guard'],
 		['Markquis Nowell',         'Point Guard'],

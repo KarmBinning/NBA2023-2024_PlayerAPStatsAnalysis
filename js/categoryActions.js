@@ -126,12 +126,10 @@ function replaceFullNameWithPlaceholder(pbp){
 			{
 				var playerUpperCaseFullName = players[p].toUpperCase();
 				pbp[i] = pbp[i].replace(players[p], playerUpperCaseFullName);
-				log(pbp[i]);
 			}
 		}
-		
+		log(pbp[i]);
 	}
-	log(pbp);
 }
 function getPlayersFullName(){
 	var playersFullName = [];
@@ -144,6 +142,5 @@ function getPlayersFullName(){
 }
 
 $(document).ready(function(){
-	
 	getEachTeamsPlay('TOR');
 });
