@@ -155,6 +155,12 @@ function getPlayersFullName(){
 	return playersFullName;
 }
 
+function getGameId(){
+	var meta_gameId = document.head.querySelector("[property~=game_id][content]").content;
+	log('GAME ID: ' + meta_gameId);
+}
+
 $(document).ready(function(){
 	getEachTeamsPlay('TOR');
+	getGameId();
 });
