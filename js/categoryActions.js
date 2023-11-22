@@ -2,7 +2,7 @@
 *	CREATED BY:				karmbinning
 *	CREATED DATE:			2023/11/14
 *	LAST MODIFIED BY:		karmbinning
-*	LAST MODIFIED DATE:	2023/11/14
+*	LAST MODIFIED DATE:		2023/11/22
 
 *	DESCRIPTION:			Create and get JSON-format of Category Actions.
 									ID 				=	Unique Identification
@@ -102,21 +102,29 @@ function getCategoryActions(){
 }
 
 function getEachTeamsPlay(team){
-	var pbp = [];
+	var _gamePlayId = 0,
+		gamePlayIds = [],
+		pbp = [];
 	$('.playByPlay__logo').each(function(i){
+		_gamePlayId++;
+
 		if ($(this).text() == team)
 		{
 			$(this).parent().find('.playByPlay__text').each(function(j){
 				pbp.push($(this).text());
+
+				gamePlayIds.push(_gamePlayId);
 			});
 		}
 	});
 	
-	replaceFullNameWithPlaceholder(pbp);
+	replaceFullNameWithPlaceholder(gamePlayIds, pbp);
 }
 
-function replaceFullNameWithPlaceholder(pbp){
-	var players = getPlayersFullName();
+function replaceFullNameWithPlaceholder(_gamePlayId, pbp){
+	var plays = [],
+		playByPlays = [],
+		players = getPlayersFullName();
 	
 	for (var i=0; i<pbp.length; i++)
 	{
@@ -126,10 +134,16 @@ function replaceFullNameWithPlaceholder(pbp){
 			{
 				var playerUpperCaseFullName = players[p].toUpperCase();
 				pbp[i] = pbp[i].replace(players[p], playerUpperCaseFullName);
+				
+				playByPlays[i] =
+				{
+					Id: _gamePlayId[i],
+					Play: pbp[i]
+				};
 			}
 		}
-		log(pbp[i]);
 	}
+	log(playByPlays);
 }
 function getPlayersFullName(){
 	var playersFullName = [];
