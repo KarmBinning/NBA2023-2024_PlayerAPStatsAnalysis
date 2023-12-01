@@ -93,8 +93,8 @@ function getTeam(){
 			name: "PHI"
 		},
         {
-			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/pho.png&scale=crop&cquality=40&location=origin&w=40&h=40",
-			name: "PHO"
+			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/phx.png&scale=crop&cquality=40&location=origin&w=40&h=40",
+			name: "PHX"
 		},
         {
 			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/por.png&scale=crop&cquality=40&location=origin&w=40&h=40",
