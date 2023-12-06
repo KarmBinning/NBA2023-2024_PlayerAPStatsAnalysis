@@ -77,8 +77,8 @@ function getTeam(){
 			name: "NOP"
 		},
         {
-			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/nyk.png&scale=crop&cquality=40&location=origin&w=40&h=40",
-			name: "NYK"
+			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/ny.png&scale=crop&cquality=40&location=origin&w=40&h=40",
+			name: "NY"
 		},
         {
 			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/orl.png&scale=crop&cquality=40&location=origin&w=40&h=40",
