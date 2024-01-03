@@ -113,7 +113,7 @@ function getTeam(){
 			name: "TOR"
 		},
         {
-			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/uta.png&scale=crop&cquality=40&location=origin&w=40&h=40",
+			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/utah.png&scale=crop&cquality=40&location=origin&w=40&h=40",
 			name: "UTA"
 		},
 		{
