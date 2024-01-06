@@ -20,7 +20,8 @@ function getPlayersList(){
 		['Ron Harper Jr.',          'Small Forward'],
 		['Jalen McDaniels',         'Power Forward'],
 		['RJ Barrett',					'Shooting Guard'],
-		['Immanuel Quickley',		'Shooting Guard']
+		['Immanuel Quickley',		'Shooting Guard'],
+		['Jontay Porter',			'Power Forward']
 	]
 
 	return playersList;
