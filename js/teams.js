@@ -37,8 +37,9 @@ function getTeam(){
 			name: "DET"
 		},
         {
-			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/gsw.png&scale=crop&cquality=40&location=origin&w=40&h=40",
-			name: "GSW"
+			//url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/gsw.png&scale=crop&cquality=40&location=origin&w=40&h=40",
+			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/gs.png&scale=crop&cquality=40&location=origin&w=40&h=40",
+			name: "GS"
 		},
         {
 			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/hou.png&scale=crop&cquality=40&location=origin&w=40&h=40",
