@@ -5,7 +5,7 @@ function getPlayersList(){
 		['Pascal Siakam',           'Power Forward'],
 		['Gradey Dick',             'Small Forward'],
 		['Scottie Barnes',          'Power Forward'],
-		['O.G. Anunoby',              'Small Forward'],
+		['O.G. Anunoby',            'Small Forward'],
 		['Jakob Poeltl',            'Center'],
 		['Gary Trent Jr.',          'Shooting Guard'],
 		['Markquis Nowell',         'Point Guard'],
@@ -19,9 +19,11 @@ function getPlayersList(){
 		['Precious Achiuwa',        'Power Forward'],
 		['Ron Harper Jr.',          'Small Forward'],
 		['Jalen McDaniels',         'Power Forward'],
-		['RJ Barrett',					'Shooting Guard'],
+		['RJ Barrett',				'Shooting Guard'],
 		['Immanuel Quickley',		'Shooting Guard'],
-		['Jontay Porter',			'Power Forward']
+		['Bruce Brown',				'Small Forward'],
+		['Jordan Nwora',			'Small Forward'],
+		['Kira Lewis',				'Point Guard']
 	]
 
 	return playersList;
