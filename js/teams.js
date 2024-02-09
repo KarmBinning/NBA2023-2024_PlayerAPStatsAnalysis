@@ -74,8 +74,8 @@ function getTeam(){
 			name: "MIN"
 		},
         {
-			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/nop.png&scale=crop&cquality=40&location=origin&w=40&h=40",
-			name: "NOP"
+			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/no.png&scale=crop&cquality=40&location=origin&w=40&h=40",
+			name: "NO"
 		},
         {
 			url: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/ny.png&scale=crop&cquality=40&location=origin&w=40&h=40",
