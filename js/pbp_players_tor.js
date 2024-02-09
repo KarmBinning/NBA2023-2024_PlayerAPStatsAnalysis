@@ -23,7 +23,9 @@ function getPlayersList(){
 		['Immanuel Quickley',		'Shooting Guard'],
 		['Bruce Brown',				'Small Forward'],
 		['Jordan Nwora',			'Small Forward'],
-		['Kira Lewis',				'Point Guard']
+		['Kira Lewis',				'Point Guard'],
+		['Kelly Olynyk',			'Center'],
+		['Ochai Agbaji',			'Small Forward']
 	]
 
 	return playersList;
