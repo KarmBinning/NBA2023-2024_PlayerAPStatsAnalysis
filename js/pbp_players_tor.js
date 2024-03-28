@@ -25,7 +25,9 @@ function getPlayersList(){
 		['Jordan Nwora',			'Small Forward'],
 		['Kira Lewis',				'Point Guard'],
 		['Kelly Olynyk',			'Center'],
-		['Ochai Agbaji',			'Small Forward']
+		['Ochai Agbaji',			'Small Forward'],
+		['Kobi Simmons',			'Point Guard'],
+		['Jontay Porter',			'Power Forward']
 	]
 
 	return playersList;
